@@ -1,0 +1,34 @@
+{
+  "name": "redux-hoax",
+  "version": "0.1.0",
+  "description": "Higher-order action creators for Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "BABEL_ENV=test mocha --require babel-register \"test/**/*.test.js\"",
+    "test:watch": "BABEL_ENV=test mocha --require babel-register \"test/**/*.test.js\" --watch",
+    "compile": "npm run clean && babel -d lib/ src/",
+    "clean": "rm -rf lib/",
+    "copypackage": "cp -rf package.json lib",
+    "release": "npm run test && npm run compile && npm run copypackage && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theJian/redux-hoax.git"
+  },
+  "keywords": [
+    "action",
+    "redux"
+  ],
+  "author": "theJian<thejianmail@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theJian/redux-hoax/issues"
+  },
+  "homepage": "https://github.com/theJian/redux-hoax#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^4.0.1"
+  }
+}
