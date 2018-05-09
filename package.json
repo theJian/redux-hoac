@@ -1,6 +1,6 @@
 {
   "name": "redux-hoax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Higher-order action creators for Redux",
   "main": "index.js",
   "scripts": {
